@@ -15,7 +15,7 @@ class CashRegister
   end
 
   def add_item(item, price, quantity=1)
-    items << [item] * quantity
+    self.items << [item] * quantity
     self.last_transaction = (price * quantity)
     self.total += self.last_transaction
   end
