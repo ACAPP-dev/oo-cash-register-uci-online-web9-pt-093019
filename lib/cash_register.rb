@@ -30,7 +30,7 @@ class CashRegister
   end
 
   def items
-    items.flatten
+    self.items.flatten
   end
 
   def void_last_transaction
