@@ -24,7 +24,7 @@ class CashRegister
     if discount == 0
       p "There is no discount to apply."
     else
-      @total = @total.to_f * (100 - @discount.to_f) * 0.01
+      self.total *= (100 - discount.to_f) * 0.01
       p "After the discount, the total comes to $#{@total.to_i}."
     end
   end
